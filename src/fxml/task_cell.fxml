@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="rootPane" prefHeight="49.0" prefWidth="852.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox fx:id="hboxTrace" alignment="CENTER_LEFT" prefHeight="60.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="49.0" prefWidth="82.0">
+               <children>
+                  <Label fx:id="lblTraceID" alignment="CENTER" minWidth="38.0" prefHeight="23.0" prefWidth="100.0">
+                     <padding>
+                        <Insets left="2.0" />
+                     </padding>
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <MenuButton fx:id="menuButtonOptions" alignment="TOP_LEFT" mnemonicParsing="false" prefHeight="25.0" prefWidth="69.0" visible="false">
+                    <items>
+                      <MenuItem mnemonicParsing="false" text="Action 1" />
+                      <MenuItem mnemonicParsing="false" text="Action 2" />
+                    </items>
+                  </MenuButton>
+               </children>
+               <HBox.margin>
+                  <Insets right="2.0" />
+               </HBox.margin>
+            </HBox>
+            <ScrollPane fx:id="scrollPaneTrace" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" opacity="0.55" prefHeight="49.0" prefWidth="779.0" vbarPolicy="NEVER">
+               <content>
+                  <HBox fx:id="hbox" alignment="CENTER_LEFT">
+                     <padding>
+                        <Insets left="2.0" />
+                     </padding></HBox>
+               </content>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </ScrollPane>
+         </children>
+      </HBox>
+   </children>
+</VBox>
